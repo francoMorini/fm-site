@@ -1,0 +1,14 @@
+h1 > span {
+    color: var( --color-gaming-red );
+}
+
+span[ id = constant ] {
+    color: var( --color-gaming-yellow );
+}
+span[ id = string ] {
+    color: var( --color-string-yellow );
+}
+
+.comment {
+    color: var( --color-comment-grey );
+}
