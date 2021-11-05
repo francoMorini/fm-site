@@ -6,12 +6,13 @@ html {
   --color-primary-black: #090909;
   
   --h1-default-size: 2.25rem;
-
+  --font-family-primary: 'Source Code Pro', monospace;
+  --font-family-secondary: 'Nunito', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: 'Source Code Pro', monospace;
+  font-family: var( --font-family-primary );
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
@@ -23,7 +24,5 @@ a {
 }
 
 code {
-  font-family: 'Source Code Pro', monospace;
+  font-family: var( --font-family-primary );
 }
-
-/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap'); */

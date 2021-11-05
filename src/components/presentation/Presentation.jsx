@@ -1,3 +1,4 @@
+import { ButtonPrimary } from "../../tools/buttons/ButtonPrimary";
 import styles from "./Presentation.module.css";
 
 export function Presentation () 
@@ -24,7 +25,7 @@ export function Presentation ()
             <div>
                 <img src="./assets/francomorini.png" width={300} height={300} alt="Franco Morini"></img>
                 <span> { imageName } </span>
-                <button> full profile </button>
+                <ButtonPrimary message="full profile" />
             </div>
 
         </section>

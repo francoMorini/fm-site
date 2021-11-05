@@ -17,10 +17,8 @@ export function App ()
                 <NavigationBar></NavigationBar>
             </header>
             <Switch>
-
                 <Route path="/"> <LandingPage></LandingPage> </Route>
                 <Route exact path="/profile"> <Profile></Profile> </Route>
-
             </Switch>
 
         </Router>
