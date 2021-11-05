@@ -1,5 +1,14 @@
+h1 {
+    font-size: var( --h1-default-size );
+    font-weight: 600;
+}
+
 h1 > span {
     color: var( --color-gaming-red );
+}
+
+p {
+    font-size: 1.125rem;
 }
 
 span[ id = constant ] {
@@ -11,4 +20,11 @@ span[ id = string ] {
 
 .comment {
     color: var( --color-comment-grey );
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 100px;
+    font-weight: 600;
 }

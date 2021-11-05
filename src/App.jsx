@@ -2,6 +2,7 @@ import styles from './App.module.css';
 import { NavigationBar } from './components/navigation/NavigationBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { LandingPage } from './pages/LandingPage';
+import { Profile } from './pages/Profile';
 
 export function App () 
 {
@@ -15,15 +16,12 @@ export function App ()
                 <h1 className={ styles.titleApp }> { title } </h1>
                 <NavigationBar></NavigationBar>
             </header>
-            <main>
+            <Switch>
 
-                <Switch>
+                <Route path="/"> <LandingPage></LandingPage> </Route>
+                <Route exact path="/profile"> <Profile></Profile> </Route>
 
-                    <Route path="/"> <LandingPage></LandingPage> </Route>
-
-                </Switch>
-                
-            </main>
+            </Switch>
 
         </Router>
     );

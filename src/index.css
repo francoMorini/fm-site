@@ -2,18 +2,20 @@ html {
   --color-gaming-red: #FC3A52;
   --color-gaming-yellow: #F9B248;
   --color-string-yellow: #E8D5B7;
-  --color-comment-grey: #575757;
+  --color-comment-grey: #676767;
+  --color-primary-black: #090909;
+  
+  --h1-default-size: 2.25rem;
+
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Source Code Pro','Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Source Code Pro', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  background-color: #090909;
+  background-color: var( --color-primary-black );
 }
 
 a {
@@ -21,6 +23,7 @@ a {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Source Code Pro', monospace;
 }
+
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap'); */
