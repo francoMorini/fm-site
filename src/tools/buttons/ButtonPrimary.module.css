@@ -4,7 +4,17 @@
     font-weight: 900;
     border-radius: 50px;
     border: none;
-    padding: 7px 15px;
+    padding: 5px 20px;
     font-family: var( --font-family-secondary );
     color: white;
+    font-size: 1.125rem;
+}
+
+.specialButton {
+    box-shadow:  0px 0px 15px 0px var( --color-gaming-red );
+    -webkit-box-shadow:  0px 0px 15px 0px var( --color-gaming-red );
+}
+
+.buttonExpanded {
+    width: 100%;
 }

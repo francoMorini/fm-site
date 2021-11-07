@@ -6,6 +6,8 @@ html {
   --color-primary-black: #090909;
   
   --h1-default-size: 2.25rem;
+  --p-default-size: 1.125rem;
+
   --font-family-primary: 'Source Code Pro', monospace;
   --font-family-secondary: 'Nunito', sans-serif;
 }

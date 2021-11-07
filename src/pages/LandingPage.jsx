@@ -10,12 +10,12 @@ export function LandingPage ()
     return (
         <main>
 
-            <Presentation></Presentation>
-            <Gamification></Gamification>
-            <Projects></Projects>
-            <Madewith></Madewith>
-            <Contact></Contact>
-            <Keystore></Keystore>
+            <Presentation />
+            <Gamification />
+            <Projects />
+            <Madewith />
+            <Contact />
+            <Keystore />
         
         </main>
     );

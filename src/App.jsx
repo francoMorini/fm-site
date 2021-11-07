@@ -13,7 +13,6 @@ export function App ()
         <Router>
 
             <header>
-                <h1 className={ styles.titleApp }> { title } </h1>
                 <NavigationBar></NavigationBar>
             </header>
             <Switch>

@@ -1,0 +1,17 @@
+.getcoins {
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 100px;
+    font-weight: 600;
+    height: 100vh;
+}
+
+.imgBox > img {
+    border-radius: 100px;
+    padding: 15px;
+    background-color: white;
+}

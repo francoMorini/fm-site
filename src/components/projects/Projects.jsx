@@ -1,26 +1,30 @@
+import { ButtonPrimary } from "../../tools/buttons/ButtonPrimary";
+import styles from "./Projects.module.css";
+import appstyle from "../../App.module.css";
+
 export function Projects () 
 {
     return (
-        <section>
-            <div>
-                <h1> public myProjects () </h1>
-                <p> // this.getCoins(); </p>
+        <section className={ styles.container }>
+            <div className={ appstyle.box }>
+                <h1> <span> public </span> myProjects () </h1>
+                <p className={ appstyle.comment }> // this.getCoins(); </p>
                 <p>
-                    <span> const </span> description = <span> 'My recent projects totally publics' </span>; <br></br>
+                    <span className={ appstyle.constant }> const </span> description = <span className={ appstyle.string }> 'My recent projects totally publics' </span>; <br />
                 </p>
                 <div>
-                    <img></img>
+                    <img />
                     <h3> NightChat </h3>
-                    <button> open box </button>
+                    <ButtonPrimary message="open box" />
                 </div>
                 <div>
-                    <img></img>
+                    <img />
                     <h3> sFinance </h3>
-                    <button> open box </button>
+                    <ButtonPrimary message="open box" />
                 </div>
             </div>
-            <div>
-                <img></img>
+            <div className={ appstyle.box }>
+                <img />
                 <div> free </div>
             </div>
         </section>

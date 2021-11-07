@@ -1,4 +1,30 @@
-.titleApp {
-    color: var(--color-gaming-yellow);
-    display: inline-block;
+h1 {
+    font-size: var( --h1-default-size );
+    font-weight: 600;
+}
+
+h1 > span {
+    color: var( --color-gaming-red );
+}
+
+p {
+    font-size: var( --p-default-size );
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.constant {
+    color: var( --color-gaming-yellow );
+}
+.string {
+    color: var( --color-string-yellow );
+}
+.comment {
+    color: var( --color-comment-grey );
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

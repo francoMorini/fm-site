@@ -1,29 +1,41 @@
+import { ButtonPrimary } from "../../tools/buttons/ButtonPrimary";
+import styles from "./Gamification.module.css";
+import appstyle from "../../App.module.css";
+
 export function Gamification () 
 {
 
     return (
-        <section>
-            <div>
-                <h1> Explore my site to getCoins () </h1>
-                <p>
-                    /* <br></br><br></br>
-                    Here you can see a mistery key <br></br>
-                    Get it by collecting coins (click on the functions) <br></br>
-                    and you can access to the secret room <br></br><br></br>
+        <section className={ styles.container }>
+            <div className={ appstyle.box }>
+                <h1> Explore my site to <span className={ styles.getcoins }>getCoins()</span> </h1>
+                <p className={ appstyle.comment }>
+                    /* <br /><br />
+                    Here you can see a mistery key <br />
+                    Get it by collecting coins (click on the functions) <br />
+                    and you can access to the secret room <br /><br />
                     */
                 </p>
                 <p>
-                I think that gamification in its proper measure <br></br>
-                improves the user experience.
+                I think that gamification in its proper measure <br />
+                improves the <span className={ appstyle.constant }>user experience</span>.
                 </p>
             </div>
-            <div>
+            <div className={ appstyle.box }>
                 <div>
-                    <img></img>
-                    <button> buy </button>
+                    <div>
+                        <div className={ styles.imgBox }>
+                            <img src="./assets/key.png" alt="Mistery Key" />
+                        </div>
+                        <ButtonPrimary message="buy" />
+                    </div>
+                    <div>
+                        <div>
+                            <p> Mistery Key </p>
+                            <p> 50 <span> coins </span> </p>
+                        </div>
+                    </div>
                 </div>
-                <p> Mistery Key </p>
-                <p> 50 <span> coins </span> </p>
             </div>
         </section>
     );

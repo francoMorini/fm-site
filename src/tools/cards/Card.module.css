@@ -1,0 +1,13 @@
+.primary_card {
+    display: inline-block;
+    background-color: white;
+    width: 160px;
+    height: 250px;
+    padding: 0 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.button_expanded {
+    display: inline-block;
+}

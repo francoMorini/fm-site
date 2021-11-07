@@ -1,12 +1,17 @@
+import { ButtonPrimary } from "../../tools/buttons/ButtonPrimary";
+import appstyle from "../../App.module.css";
+import styles from './Contact.module.css';
+import { Card } from "../../tools/cards/Card";
+
 export function Contact () 
 {
 
     return (
 
-        <section>
-            <div>
-                <h1> public contact () </h1>
-                <p> // Be free to choose how to contact me </p>
+        <section className={ styles.container }>
+            <div className={ appstyle.box }>
+                <h1> <span>public</span> contact () </h1>
+                <p className={ appstyle.comment }> // Be free to choose how to contact me </p>
                 <div>
                     <p> { '>' } sendEmail() </p>
                     <p> { '>' } gitHub() </p>
@@ -14,13 +19,8 @@ export function Contact ()
                     <p> { '>' } getCoins() </p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <img></img>
-                    <h3> Contact Me </h3>
-                    <p> By using a form </p>
-                    <button> click me </button>
-                </div>
+            <div className={ appstyle.box }>
+                <Card buttonTxt='click me' />
             </div>
         </section>
 
