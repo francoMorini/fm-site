@@ -1,19 +1,24 @@
 .navigationBar {
     position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
 }
 
 .navigationBar > h1 {
+    margin-left: 100px;
     font-weight: 900;
     color: var( --color-gaming-yellow );
+    text-shadow: 0 0 15px var( --color-gaming-yellow );
+}
+
+.navigationBar > ul {
+    margin-right: 100px;
+    padding: 0;
 }
 
 .navigationBar > ul > li {
-    float: left;
+    float: right;
     list-style: none;
     padding: 0 15px;
     height: 100%;

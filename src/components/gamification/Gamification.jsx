@@ -22,18 +22,14 @@ export function Gamification ()
                 </p>
             </div>
             <div className={ appstyle.box }>
-                <div>
-                    <div>
-                        <div className={ styles.imgBox }>
-                            <img src="./assets/key.png" alt="Mistery Key" />
-                        </div>
-                        <ButtonPrimary message="buy" />
+                <div className={ styles.keyBox }>
+                    <div className={ styles.imgBox }>
+                        <img src="./assets/keys.png" alt="Mistery Key" />
+                        <div className={ styles.buyPill }> buy </div>
                     </div>
                     <div>
-                        <div>
-                            <p> Mistery Key </p>
-                            <p> 50 <span> coins </span> </p>
-                        </div>
+                        <p className={ styles.keyName }> Mistery Key </p>
+                        <p className={ styles.price }> 50 <span> coins </span> </p>
                     </div>
                 </div>
             </div>

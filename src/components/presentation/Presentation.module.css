@@ -17,6 +17,7 @@
 }
 .profileBox > span {
     width: 100%;
+    display: inline-block;
     font-family: var( --font-family-secondary );
     font-weight: 900;
     font-size: 2rem;

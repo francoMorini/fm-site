@@ -5,13 +5,53 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 100px;
+    padding: 0 100px;
     font-weight: 600;
     height: 100vh;
+    background-color: var( --color-secondary-black );
 }
 
+.imgBox {
+    position: relative;
+    margin-bottom: 30px;
+}
 .imgBox > img {
     border-radius: 100px;
     padding: 15px;
     background-color: white;
+    box-shadow: 0 0 15px rgba( 255, 255, 255, 0.5 );
+}
+
+.keyBox {
+    text-align: center;
+}
+
+.keyName {
+    font-family: var( --font-family-secondary );
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.price {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    color: var( --color-gaming-red );
+}
+
+.buyPill {
+    background: var( --color-gaming-yellow );
+    background: linear-gradient( 45deg, var( --color-gaming-yellow ) -15%, var( --color-gaming-red ) 100% );
+    font-weight: 900;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 20px;
+    font-family: var( --font-family-secondary );
+    color: white;
+    font-size: 1.35rem;
+    display: inline-block;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translate( 50%, 50% );
 }

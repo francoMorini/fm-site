@@ -4,9 +4,13 @@ html {
   --color-string-yellow: #E8D5B7;
   --color-comment-grey: #676767;
   --color-primary-black: #090909;
+  --color-secondary-black: #111111;
   
   --h1-default-size: 2.25rem;
+  --h1-default-size-dynamic: 2.5vmax;
+
   --p-default-size: 1.125rem;
+  --p-default-size-dynamic: calc( var(--h1-default-size-dynamic) / 2.5 );
 
   --font-family-primary: 'Source Code Pro', monospace;
   --font-family-secondary: 'Nunito', sans-serif;
