@@ -6,9 +6,9 @@ export function NavigationBar ()
         <nav className={ styles.navigationBar }>
             <h1> { '{fm}' } </h1>
             <ul>
-                <li> contact() </li>
-                <li> projects() </li>
                 <li> me() </li>
+                <li> projects() </li>
+                <li> contact() </li>
             </ul>
         </nav>
     );

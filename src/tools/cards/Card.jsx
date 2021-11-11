@@ -11,7 +11,7 @@ export function Card ( { src = '', title = '', description = '', active = false,
             <p> { description } </p>
 
             { 
-                ( buttonTxt != '' ) ? 
+                ( buttonTxt !== '' ) ? 
                 <ButtonPrimary expanded={ true } message={ buttonTxt } /> 
                 : 
                 '' 

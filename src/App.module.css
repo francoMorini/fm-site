@@ -1,5 +1,5 @@
 h1 {
-    font-size: var( --h1-default-size-dynamic );
+    font-size: 2.75em;
     font-weight: 600;
 }
 
@@ -8,7 +8,7 @@ h1 > span {
 }
 
 p {
-    font-size: var( --p-default-size-dynamic );
+    font-size: 1.25em;
     margin-top: 10px;
     margin-bottom: 0;
 }
@@ -23,8 +23,42 @@ p {
     color: var( --color-comment-grey );
 }
 
+.container {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.container_light {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: var( --color-secondary-black );
+}
+
+.container_grid {
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
 .box {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    
+    body {
+        font-size: 14px;
+    }
+
+    .container_grid {
+        grid-template-columns: 1fr;
+    }
+
 }
